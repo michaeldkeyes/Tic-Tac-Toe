@@ -10,6 +10,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-size: 1.6rem;
+}
+
 ol,
 ul {
   list-style: none;
@@ -20,8 +24,48 @@ img {
   height: auto;
 }
 
-button,
-input {
+button {
   background-color: transparent;
-  border: none;
+  border: 1px solid #000;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.gameBoard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 27em;
+  margin: 2rem auto;
+  width: 27em;
+}
+
+.cell {
+  border: 4px solid #000;
+  font-size: 11rem;
+  padding: 0 2.3rem;
+  padding-top: 0.4rem;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.score div {
+  margin-right: 10rem;
+}
+
+.score div:first-child {
+  margin-left: 10rem;
 }
